@@ -125,7 +125,7 @@ let gems = ["ruby", "sapphire", "diamond", "emerald"]
 
 console.log(recursiveCode.findSapphires(myNestedObject))
 
-//console.log(recursiveCode.claim(gems))
+console.log(recursiveCode.claim(gems))
 
 
 
