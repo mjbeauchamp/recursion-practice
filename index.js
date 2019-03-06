@@ -36,6 +36,11 @@ const myNestedObject = {
                         sapphires: 6000
                     }
                 }
+            },
+            child3: {
+                name: "Jon",
+                gold: 600000,
+                sapphires: 50000
             }
         }
     },
@@ -97,7 +102,15 @@ const myNestedObject = {
                         children: {
                             child1: {
                                 name: "Spike",
-                                sapphires: 60000
+                                sapphires: 60000,
+                                children: {
+                                    child1: {
+                                        name: "Becca",
+                                        gold: 50000,
+                                        sapphires: 400,
+                                        rubies: 60000
+                                    }
+                                }
                             }
                         }
                     }
@@ -110,9 +123,9 @@ const myNestedObject = {
 let gems = ["ruby", "sapphire", "diamond", "emerald"]
 /////////////////////
 
-recursiveCode.findSapphires(myNestedObject)
+console.log(recursiveCode.findSapphires(myNestedObject))
 
-console.log(recursiveCode.claim(gems))
+//console.log(recursiveCode.claim(gems))
 
 
 
